@@ -3,13 +3,12 @@ layout: post
 title: "Hello World"
 modified:
 categories: blog
-excerpt:
+excerpt: This is an excerpt of a blog post.
 tags: []
 image:
   feature:
 date: 2014-08-08T15:39:55-04:00
 modified: 2016-06-01T14:19:19-04:00
-share: true
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
