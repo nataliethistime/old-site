@@ -25,8 +25,22 @@
 
       <hr class="tiny-divider animated fadeIn" />
 
-      <div class="homepage-social-buttons animated fadeIn">
-        {% include social-buttons-home.html %}
+      <div class="social-icons homepage-social-buttons animated fadeIn">
+        <a href="https://youtube.com/user/1vasari" target="_blank" title="1vasari on YouTube">
+          <i class="fa fa-youtube-square fa-3x"></i>
+        </a>
+
+        <a href="https://facebook.com/1vasari" title="1vasari on Facebook" target="_blank">
+          <i class="fa fa-facebook-square fa-3x"></i>
+        </a>
+
+        <a href="https://instagram.com/1vasari" title="1vasari on Instagram" target="_blank">
+          <i class="fa fa-instagram fa-3x"></i>
+        </a>
+
+        <a href="mailto:{{ site.owner.email }}" title="Email 1vasari">
+          <i class="fa fa-envelope-square fa-3x"></i>
+        </a>
       </div>
     </div>
 
@@ -48,8 +62,7 @@
         transition: 'fade',
         transitionDuration: 2000,
         firstTransition: 'fade',
-        firstTransitionDuration: 200,
-        // overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/02.png'
+        firstTransitionDuration: 200
       })
     </script>
   </body>

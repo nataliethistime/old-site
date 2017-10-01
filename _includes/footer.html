@@ -1,3 +1,25 @@
-<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span>
+<span>
+  &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} (aka {{ site.owner.username }}).
+</span>
 
-{% include social-buttons.html %}
+<div class="social-icons">
+  <a href="https://youtube.com/user/1vasari" target="_blank" title="1vasari on YouTube">
+    <i class="fa fa-youtube-square fa-2x"></i>
+  </a>
+
+  <a href="mailto:{{ site.owner.email }}" title="Email 1vasari">
+    <i class="fa fa-envelope-square fa-2x"></i>
+  </a>
+
+  <a href="https://instagram.com/1vasari" title="1vasari on Instagram" target="_blank">
+    <i class="fa fa-instagram fa-2x"></i>
+  </a>
+
+  <a href="https://facebook.com/1vasari" title="1vasari on Facebook" target="_blank">
+    <i class="fa fa-facebook-square fa-2x"></i>
+  </a>
+
+  <a href="https://twitter.com/1vasari" title="1vasari on Twitter" target="_blank">
+    <i class="fa fa-twitter-square fa-2x"></i>
+  </a>
+</div>
