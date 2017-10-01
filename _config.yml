@@ -1,0 +1,53 @@
+# Site wide configuration
+
+title: 1vasari
+locale: en_US
+description: YouTube musician and producer
+logo: site-logo.png
+url: http://localhost:4000
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: false
+
+# Site owner
+owner:
+  name: Nathan McCallum
+  avatar: bio-photo.jpg
+  email: me@1vasari.xyz
+  disqus-shortname:
+  twitter: 1vasari
+  facebook: 1vasari
+  github: 1vasari
+  stackexchange: https://stackexchange.com/users/2245537/1vasari
+  linkedin: #username
+  instagram: 1vasari
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
