@@ -31,19 +31,13 @@ mathjax: false
 # Site owner
 owner:
   name: Nathan McCallum
+  username: 1vasari
   avatar: bio-photo.jpg
   email: me@1vasari.xyz
-  disqus-shortname:
+  youtube: 1vasari
   twitter: 1vasari
   facebook: 1vasari
-  github: 1vasari
-  stackexchange: https://stackexchange.com/users/2245537/1vasari
-  linkedin: #username
   instagram: 1vasari
-  flickr: #username
-  tumblr: #username
-  pinterest: #username
-  weibo: #userid
   google:
     plus: #username
     analytics:

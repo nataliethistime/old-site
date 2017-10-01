@@ -1,0 +1,74 @@
+
+#home {
+	@include clearfix;
+
+  /* White text with 1px black stroke */
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000000,
+    1px  -1px 0 #000000,
+    -1px  1px 0 #000000,
+    1px   1px 0 #000000;
+
+  /* Horizontal center */
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  /* Vertical center */
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+
+  position: absolute;
+
+  .title {
+    margin-bottom: 0;
+    @include animation-duration(1s);
+    @include animation-delay(.75s);
+
+    font-size: 5em;
+  }
+
+  .description {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: $alt-font;
+    @include font-size(22);
+    font-weight: 400;
+    font-style: italic;
+    @include animation-duration(1s);
+    @include animation-delay(1s);
+
+    @include media($medium) {
+      @include font-size(26);
+    }
+  }
+}
+
+.vegas-slide {
+  filter: brightness(40%);
+  -webkit-filter: brightness(40%);
+}
+
+.fa-3x {
+  color: white;
+}
+
+.tiny-divider {
+  @include animation-duration(1s);
+  @include animation-delay(1.5s);
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin: 30px auto;
+  height: 2px;
+  background: white;
+}
+
+.homepage-social-buttons {
+  @include animation-duration(1s);
+  @include animation-delay(1.5s);
+}

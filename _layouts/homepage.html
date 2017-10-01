@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
   <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.css" />
+
     {% include head.html %}
   </head>
 
-  <body id="page">
+  <body id="page" style="background-color: black;">
 
     {% include navigation.html %}
 
-    <div id="main" role="main">
-      <h1>Hello, World!</h1>
+    <div id="home" role="main">
+      <h1 class="title animated fadeIn">
+        {{ site.title }}
+      </h1>
 
-      <h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">{{ site.title }}</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">{{ site.description }}</h2>
+      <h2 class="description animated fadeIn" itemprop="description">
+        {{ site.description }}
+      </h2>
+
+      <hr class="tiny-divider animated fadeIn" />
+
+      <div class="homepage-social-buttons animated fadeIn">
+        {% include social-buttons-home.html %}
+      </div>
     </div>
+
+    {% include scripts.html %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.js"></script>
+
+    <script>
+      $('body').vegas({
+        slides: [
+          {src: '{{ site.url }}/assets/img/vegas-1.png'},
+          {src: '{{ site.url }}/assets/img/vegas-2.png'}
+        ],
+
+        // Settings
+        preload: true,
+        timer: false,
+        delay: 5 * 1000,
+        transition: 'fade',
+        transitionDuration: 2000,
+        firstTransition: 'fade',
+        firstTransitionDuration: 200,
+        // overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/02.png'
+      })
+    </script>
   </body>
 </html>
