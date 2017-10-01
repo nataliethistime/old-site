@@ -20,16 +20,11 @@
 /* feature image */
 
 .entry-feature-image {
-	margin: 20px 0 0;
+  /* Fancy CSS to keep it a reasonable height */
 	width: 100%;
-
-	@include media($medium) {
-		margin-top: -75px; /* move up to be overlapped by site logo */
-	}
-
-	@include media($large) {
-		margin-top: -145px; /* move up further to be overlapped by site logo */
-	}
+  height: 200px;
+  object-fit: cover;
+  background-color: gray;
 }
 
 /* page header */
@@ -346,4 +341,14 @@ span + .entry-title {
 	tr, td, th {
 		vertical-align: middle;
 	}
+}
+
+/* For lazy loading images */
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
 }
